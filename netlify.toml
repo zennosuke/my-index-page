@@ -1,3 +1,12 @@
 [build]
 publish = "public"
-command = "hugo --theme=hermit --buildDrafts --gc --minify"
+command = "hugo --gc --themesDir themes/hermit -b $URL"
+# command = "hugo --theme=hermit --buildDrafts --gc --minify"
+
+[context.production.environment]
+HUGO_VERSION = "0.69.2"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.69.2"
