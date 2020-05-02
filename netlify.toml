@@ -1,7 +1,8 @@
 [build]
 publish = "public"
 # command = "hugo --gc --minify"
-command = "hugo --theme=hermit --buildDrafts --gc --minify"
+# command = "hugo --theme=hermit --buildDrafts --gc --minify"
+command = "hugo --theme=hermit --gc --minify"
 
 
 [context.production.environment]
